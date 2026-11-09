@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "techspecs"
+version = "0.1.0"
+description = "In-depth computer hardware spec analyzer, power scoring engine, and baseline comparator"
+readme = "README.md"
+authors = [{ name = "Louis Simonet", email = "louis@simonet.name" }]
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+techspecs = "techspecs.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["techspecs*"]
