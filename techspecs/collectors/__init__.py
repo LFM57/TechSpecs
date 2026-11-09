@@ -6,9 +6,9 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
 from techspecs.collectors.cpu import CPUInfo, collect_cpu_info
-from techspecs.collectors.gpu import GPUInfo, collect_gpu_info
+from techspecs.collectors.gpu import GPUDevice, GPUInfo, collect_gpu_info
 from techspecs.collectors.memory import MemoryInfo, collect_memory_info
-from techspecs.collectors.storage import StorageInfo, collect_storage_info
+from techspecs.collectors.storage import StorageDrive, StorageInfo, collect_storage_info
 from techspecs.collectors.system import SystemInfo, collect_system_info
 
 
@@ -35,8 +35,10 @@ def collect_specs() -> SpecSnapshot:
 
 __all__ = [
     "CPUInfo",
+    "GPUDevice",
     "GPUInfo",
     "MemoryInfo",
+    "StorageDrive",
     "StorageInfo",
     "SystemInfo",
     "SpecSnapshot",
