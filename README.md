@@ -24,8 +24,8 @@ Run TechSpecs with one command:
 
 ```bash
 # Clone the repository
-git clone https://github.com/louis-simonet/techspecs.git
-cd techspecs
+git clone https://github.com/LFM57/TechSpecs.git
+cd TechSpecs
 
 # Create a clean virtual environment and install
 uv venv --system-site-packages
